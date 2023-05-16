@@ -1,0 +1,11 @@
+
+.nav-image-grid{
+    display: grid;
+    background-color: red;
+    justify-content: center;
+}
+
+.nav-image-grid img{
+    width: 200px;
+    height: auto;
+}
