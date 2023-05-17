@@ -1,4 +1,4 @@
-import homer from "../images/Homer_Simpson_2006.png"
+import me from "../images/dummy-me.png"
 import { NavImages } from "./NavImages"
 import "../styles/Home.css"
 import { motion } from "framer-motion"
@@ -14,7 +14,7 @@ export const Home = () => {
         >
             <main>
                 <h2>Welcome!</h2>
-                <img src={homer} alt="Ross Kennedy"/>
+                <img src={me} alt="Ross Kennedy"/>
                 <NavImages />
             </main>
         </motion.div>
