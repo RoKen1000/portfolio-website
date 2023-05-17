@@ -1,11 +1,21 @@
 
 .nav-image-grid{
     display: grid;
-    background-color: red;
+    
+    grid-template-columns: 80px 80px;
+    grid-template-rows: 80px 80px;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: large;
 }
 
-.nav-image-grid img{
-    width: 200px;
-    height: auto;
+.nav-image-grid p{
+    margin: 0px;
+}
+
+
+.icons{
+    width: 50px;
 }
