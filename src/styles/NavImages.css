@@ -1,0 +1,27 @@
+
+.nav-image-grid{
+    display: grid;
+    grid-template-columns: 80px 80px;
+    grid-template-rows: 80px 80px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: large;
+}
+
+.nav-image-grid p{
+    margin: 0px;
+}
+
+.nav-image-grid a:link{
+    color:rgb(182, 114, 222);
+}
+
+.nav-image-grid a:visited{
+    color:rgb(182, 114, 222);
+}
+
+.icons{
+    width: 50px;
+}
