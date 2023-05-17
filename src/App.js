@@ -1,16 +1,13 @@
 import './App.css';
-import {Routes, Route} from "react-router-dom"
-import { Home } from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from './components/Header';
+import { AnimatedRoutes } from './components/AnimatedRoutes';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />}/>
-      </Routes>
+      <AnimatedRoutes />
     </div>
   );
 }
