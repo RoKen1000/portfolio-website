@@ -1,0 +1,15 @@
+
+.about-container{
+    width: 300px;
+    margin: auto
+}
+
+.about-container img{
+    width: 200px;
+    margin: 20px;
+}
+
+.about-container p{
+    text-align: left;
+    font-size: large;
+}

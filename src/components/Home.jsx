@@ -9,7 +9,7 @@ export const Home = () => {
         <motion.div
             className="landing-page"
             initial={{opacity: 0}}
-            animate={{opacity: 1}}
+            animate={{opacity: 2}}
             exit={{opacity: 0}}
         >
             <main>
