@@ -1,0 +1,36 @@
+
+.tech-cards p{
+    text-align: left;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.tech-cards{
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1400px){
+    .tech-card-grid{
+        width: 1400px;
+        margin: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .tech-card-grid{
+        width: 500px;
+        margin: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tech-card-grid{
+        width: auto;
+    }
+}
+
+#icon{
+    margin: 20px;
+}
