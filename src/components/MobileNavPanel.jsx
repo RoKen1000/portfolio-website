@@ -12,9 +12,9 @@ export const MobileNavPanel = () => {
     const handleClose = () => setShow(false)
 
     return(
-        <div>
+        <nav>
             <FontAwesomeIcon icon={faBars} onClick={handleShow}/>
-            <Offcanvas show={show} onHide={handleClose} closeButton>
+            <Offcanvas show={show} onHide={handleClose} >
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Where to?</Offcanvas.Title>
                 </Offcanvas.Header>
@@ -41,6 +41,6 @@ export const MobileNavPanel = () => {
                         </NavLink>
                 </Offcanvas.Body>
             </Offcanvas>
-        </div>
+        </nav>
     )
 }
