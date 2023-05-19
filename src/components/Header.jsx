@@ -1,16 +1,24 @@
 import "../styles/Header.css"
-import { useLocation } from "react-router-dom"
 import { MobileNavPanel } from "./MobileNavPanel"
+import { AnimatePresence, motion } from "framer-motion"
 
-export const Header = () => {
-
-    const location = useLocation()
-
+export const Header = ({header}) => {
     return(
-        <header className="header">
-            <h1>Ross Kennedy</h1>
-            <h2>Full Stack Developer</h2>
-            {location.pathname !== "/" && <MobileNavPanel />}
-        </header>
+        <AnimatePresence mode="wait">
+            {header &&
+            <motion.div
+                    key={"me"}
+                    initial={{y: -200}}
+                    animate={{y: 0}}
+                    exit={{y: -200}}
+                > 
+                <header className="header">
+                    <h1>Ross Kennedy</h1>
+                    <h2>Full Stack Developer</h2>
+                    <MobileNavPanel />
+                </header>
+             </motion.div>
+            }
+        </AnimatePresence>
     )
 }

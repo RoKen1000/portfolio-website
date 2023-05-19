@@ -24,7 +24,7 @@ export const Portfolio = () => {
             <motion.div
                     className="landing-page"
                     initial={{opacity: 0}}
-                    animate={{opacity: 2}}
+                    animate={{opacity: 1}}
                     exit={{opacity: 0}}
                 > 
                 <h1>Portfolio</h1>
@@ -63,7 +63,7 @@ export const Portfolio = () => {
                                 <Card.Body>
                                     <Card.Title><strong>This Website</strong></Card.Title>
                                     <Card.Text>
-                                        This website has been created using <strong>JavaScript, React, React Bootstrap, JSX and CSS</strong>.
+                                        This website has been created using <strong>JavaScript, React, React Bootstrap, JSX, Framer Motion and CSS</strong>.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

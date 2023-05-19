@@ -14,7 +14,7 @@ export const TechSkills = () => {
             <motion.div
                 className="landing-page"
                 initial={{opacity: 0}}
-                animate={{opacity: 2}}
+                animate={{opacity: 1}}
                 exit={{opacity: 0}}
             >   
                 <h1>Tech Skills</h1>
