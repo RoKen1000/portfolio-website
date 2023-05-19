@@ -1,0 +1,47 @@
+.portfolio-article-page  h1{
+    margin: 20px;
+}
+
+.portfolio-article-page ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.portfolio-article-page img{
+    width: 300px;
+    border: solid black;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 300px) {
+    .portfolio-article-page img{
+        width: 250px;
+    }
+    .portfolio-article-page p{
+       margin-right: 20px;
+    }
+}
+
+.portfolio-article-page figcaption{
+    margin: 20px;
+}
+
+.portfolio-article-page p{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.portfolio-article-page button{
+    margin: 20px;
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 700px){
+    .portfolio-article-page p{
+        width: 700px;
+        margin: auto;
+    }
+    .portfolio-article-page button{
+        margin: 20px;
+    }
+}

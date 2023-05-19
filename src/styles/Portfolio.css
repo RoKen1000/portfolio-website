@@ -39,3 +39,11 @@
     margin-bottom: 40px;
 }
 
+@media screen and (min-width: 500px){
+    #website-portfolio-card{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

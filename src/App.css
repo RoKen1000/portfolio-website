@@ -3,6 +3,10 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+p{
+  font-size: large;
+}
+
 html body{
   color: black;
 }
