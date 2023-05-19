@@ -17,6 +17,7 @@ export const TechSkills = () => {
                 animate={{opacity: 2}}
                 exit={{opacity: 0}}
             >   
+                <h1>Tech Skills</h1>
                 <Container className="tech-card-grid" fluid>
                     <Row xs={1} sm={1} md={2} lg={3}>
                         <Col>

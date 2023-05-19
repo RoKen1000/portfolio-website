@@ -7,31 +7,33 @@ import { Link } from "react-router-dom"
 export const NavImages = () => {
 
     return (
-        <div className="nav-image-grid">
-            <div>
-                <Link to="/about">
-                    <FontAwesomeIcon icon={faUser} className="icons" size="3x"/>
-                </Link>
-                <p>About</p>
+        <nav>
+            <div className="nav-image-grid">
+                <div>
+                    <Link to="/about">
+                        <FontAwesomeIcon icon={faUser} className="icons" size="3x"/>
+                    </Link>
+                    <p>About</p>
+                </div>
+                <div>
+                    <Link to="/tech-skills">
+                        <FontAwesomeIcon icon={faCode} className="icons" size="3x"/>
+                    </Link>
+                    <p>Skills</p>
+                </div>
+                <div>
+                    <Link to="/portfolio">
+                        <FontAwesomeIcon icon={faFolderOpen} className="icons" size="3x"/>
+                    </Link>
+                    <p>Portfolio</p>
+                </div>
+                <div>
+                    <Link to="/contact">
+                        <FontAwesomeIcon icon={faEnvelope} className="icons" size="3x"/>
+                    </Link>
+                    <p>Contact</p>
+                </div>
             </div>
-            <div>
-                <Link to="/tech-skills">
-                    <FontAwesomeIcon icon={faCode} className="icons" size="3x"/>
-                </Link>
-                <p>Skills</p>
-            </div>
-            <div>
-                <Link to="/projects">
-                    <FontAwesomeIcon icon={faFolderOpen} className="icons" size="3x"/>
-                </Link>
-                <p>Projects</p>
-            </div>
-            <div>
-                <Link to="/contact">
-                    <FontAwesomeIcon icon={faEnvelope} className="icons" size="3x"/>
-                </Link>
-                <p>Contact</p>
-            </div>
-        </div>
+        </nav>
     )
 }

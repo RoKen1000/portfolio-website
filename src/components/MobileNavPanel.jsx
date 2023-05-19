@@ -27,9 +27,9 @@ export const MobileNavPanel = () => {
                             <FontAwesomeIcon icon={faCode} className="mobile-nav-icons" size="3x"/>
                             <p>Skills</p>
                         </NavLink>
-                        <NavLink to="/projects" className="mobile-nav-link" onClick={handleClose}>
+                        <NavLink to="/portfolio" className="mobile-nav-link" onClick={handleClose}>
                             <FontAwesomeIcon icon={faFolderOpen} className="mobile-nav-icons" size="3x"/>
-                            <p>Projects</p>
+                            <p>Portfolio</p>
                         </NavLink>
                         <NavLink to="/contact" className="mobile-nav-link" onClick={handleClose}>
                             <FontAwesomeIcon icon={faEnvelope} className="mobile-nav-icons" size="3x"/>

@@ -3,6 +3,9 @@ import { Home } from "./Home"
 import { About } from "./About"
 import { AnimatePresence } from "framer-motion"
 import { TechSkills } from "./TechSkills"
+import { Portfolio } from "./Portfolio"
+import { BoardGameReviews } from "./BoardGameReviews"
+import { MapYourDay } from "./MapYourDay"
 
 export const AnimatedRoutes = () => {
 
@@ -14,7 +17,9 @@ export const AnimatedRoutes = () => {
                 <Route path="/" element={<Home />}/>
                 <Route path="/about" element={<About />}/>
                 <Route path="/tech-skills" element={<TechSkills />}/>
-                <Route path="/projects" />
+                <Route path="/portfolio" element={<Portfolio/>}/>
+                <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
+                <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />
                 <Route path="/contact" />
             </Routes>
         </AnimatePresence>
