@@ -1,0 +1,41 @@
+#nc-games-logo{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 300px){
+    #nc-games-logo{
+        width: 200px;
+    }
+}
+
+#myd-logo{
+    border-radius: 20px;
+    width: 100px;
+    height: 151px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.portfolio-cards{
+    margin-bottom: 40px;
+}
+
+.portfolio-cards p{
+    text-align: left;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.portfolio-page h1{
+    margin: 20px;
+}
+
+.portfolio-page h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
