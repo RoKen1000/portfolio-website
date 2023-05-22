@@ -7,7 +7,6 @@ export const Header = ({header}) => {
         <AnimatePresence mode="wait">
             {header &&
             <motion.div
-                    key={"me"}
                     initial={{y: -200}}
                     animate={{y: 0}}
                     exit={{y: -200}}

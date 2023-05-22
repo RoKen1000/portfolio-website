@@ -14,7 +14,7 @@ export const AnimatedRoutes = ({setHeader}) => {
     
     useEffect(() => {
         if(location.pathname === "/") setHeader(false)
-        else setHeader(true)
+        else setTimeout(() => setHeader(true), 270)
     }, [location.pathname])
 
     return(

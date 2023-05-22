@@ -1,13 +1,12 @@
 
 .nav-image-grid{
-    display: grid;
-    grid-template-columns: 80px 80px;
-    grid-template-rows: 80px 80px;
+    display: flex;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    flex-direction: column;
     font-size: large;
+    color: black;
+    width: 100px;
+    margin-top: 40px;
 }
 
 .nav-image-grid p{
@@ -15,13 +14,28 @@
 }
 
 .nav-image-grid a:link{
-    color:rgb(182, 114, 222);
+    color:rgb(0, 0, 0);
 }
 
 .nav-image-grid a:visited{
-    color:rgb(182, 114, 222);
+    color:rgb(0, 0, 0);
 }
 
 .icons{
     width: 50px;
+}
+
+@media screen and (min-width: 800px){
+    .nav-image-grid{
+        flex-direction: row;
+        gap: 40px;
+        /* position: absolute; */
+        /* left: 0;
+        right: 240px;
+        top: 650px; */
+        /* width: 0px; */
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
