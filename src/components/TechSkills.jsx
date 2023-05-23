@@ -12,12 +12,11 @@ export const TechSkills = () => {
     return(
         <main>
             <motion.div
-                className="landing-page"
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 exit={{opacity: 0}}
             >   
-                <h1>Tech Skills</h1>
+                <h1 className="page-heading">Skills</h1>
                 <Container className="tech-card-grid" fluid>
                     <Row xs={1} sm={1} md={2} lg={3}>
                         <Col>

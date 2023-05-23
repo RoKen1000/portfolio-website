@@ -22,12 +22,11 @@ export const Portfolio = () => {
     return(
         <main className="portfolio-page">
             <motion.div
-                    className="landing-page"
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}
                 > 
-                <h1>Portfolio</h1>
+                <h1 className="page-heading">Portfolio</h1>
                 <Container className="portfolio-grid">
                     <Row xs={1} sm={1} md={1} lg={2}>
                         <Col>

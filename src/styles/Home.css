@@ -1,5 +1,7 @@
 .landing-page{
     height: 100vh;
+    /* background-color: #fadfa1; */
+    background-image: linear-gradient(to top, rgb(255, 228, 196), rgb(255, 255, 255));
 }
 
 #landing-image{
@@ -12,13 +14,10 @@
     top: 40px
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 300px){
     #landing-image{
         left: 100px;
         top: 40px;  
-    }
-    .landing-page{
-        overflow: hidden;
     }
 }
 
@@ -44,7 +43,7 @@
         top: 40px;  
     }
     .landing-page{
-        overflow: hidden;
+        overflow: none;
     }
     .image-container{
         position: none;
