@@ -52,7 +52,7 @@ export const TechSkills = () => {
                             </Card>  
                             <Card className="tech-cards">
                                 <Card.Body>
-                                    <Card.Title><strong>Test Driven Development</strong></Card.Title>
+                                    <Card.Title><strong>Test-Driven Development</strong></Card.Title>
                                         <FontAwesomeIcon icon={faFlask} size="4x" id="icon" /><br></br>
                                     <Card.Text >
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At odit quidem nostrum voluptatum quaerat repellat impedit, commodi perferendis veritatis pariatur maxime atque aliquid corporis autem, iste quia? Voluptates, veritatis dolorem?
