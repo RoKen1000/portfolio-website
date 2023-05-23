@@ -22,12 +22,11 @@ export const Portfolio = () => {
     return(
         <main className="portfolio-page">
             <motion.div
-                    className="landing-page"
                     initial={{opacity: 0}}
-                    animate={{opacity: 2}}
+                    animate={{opacity: 1}}
                     exit={{opacity: 0}}
                 > 
-                <h1>Portfolio</h1>
+                <h1 className="page-heading">Portfolio</h1>
                 <Container className="portfolio-grid">
                     <Row xs={1} sm={1} md={1} lg={2}>
                         <Col>
@@ -63,7 +62,7 @@ export const Portfolio = () => {
                                 <Card.Body>
                                     <Card.Title><strong>This Website</strong></Card.Title>
                                     <Card.Text>
-                                        This website has been created using <strong>JavaScript, React, React Bootstrap, JSX and CSS</strong>.
+                                        This website has been created using <strong>JavaScript, React, React Bootstrap, JSX, Framer Motion and CSS</strong>.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

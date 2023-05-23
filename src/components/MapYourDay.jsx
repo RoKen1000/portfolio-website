@@ -18,7 +18,7 @@ export const MapYourDay = () => {
         <main className="portfolio-article-page">
             <motion.div
                 initial={{opacity: 0}}
-                animate={{opacity: 2}}
+                animate={{opacity: 1}}
                 exit={{opacity: 0}}
             >
                 <h1>Map Your Day</h1>

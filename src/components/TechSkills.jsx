@@ -12,12 +12,11 @@ export const TechSkills = () => {
     return(
         <main>
             <motion.div
-                className="landing-page"
                 initial={{opacity: 0}}
-                animate={{opacity: 2}}
+                animate={{opacity: 1}}
                 exit={{opacity: 0}}
             >   
-                <h1>Tech Skills</h1>
+                <h1 className="page-heading">Skills</h1>
                 <Container className="tech-card-grid" fluid>
                     <Row xs={1} sm={1} md={2} lg={3}>
                         <Col>
@@ -52,7 +51,7 @@ export const TechSkills = () => {
                             </Card>  
                             <Card className="tech-cards">
                                 <Card.Body>
-                                    <Card.Title><strong>Test Driven Development</strong></Card.Title>
+                                    <Card.Title><strong>Test-Driven Development</strong></Card.Title>
                                         <FontAwesomeIcon icon={faFlask} size="4x" id="icon" /><br></br>
                                     <Card.Text >
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At odit quidem nostrum voluptatum quaerat repellat impedit, commodi perferendis veritatis pariatur maxime atque aliquid corporis autem, iste quia? Voluptates, veritatis dolorem?

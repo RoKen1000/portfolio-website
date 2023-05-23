@@ -10,3 +10,7 @@ p{
 html body{
   color: black;
 }
+
+.page-heading{
+  margin: 20px;
+}

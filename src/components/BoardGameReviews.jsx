@@ -12,7 +12,7 @@ export const BoardGameReviews = () => {
         <main className="portfolio-article-page">
             <motion.div
                 initial={{opacity: 0}}
-                animate={{opacity: 2}}
+                animate={{opacity: 1}}
                 exit={{opacity: 0}}
             > 
                 <h1>Board Game Review Website - NC Games</h1>

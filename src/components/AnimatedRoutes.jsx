@@ -6,10 +6,16 @@ import { TechSkills } from "./TechSkills"
 import { Portfolio } from "./Portfolio"
 import { BoardGameReviews } from "./BoardGameReviews"
 import { MapYourDay } from "./MapYourDay"
+import { useEffect } from "react"
 
-export const AnimatedRoutes = () => {
+export const AnimatedRoutes = ({setHeader}) => {
 
     const location = useLocation()
+    
+    useEffect(() => {
+        if(location.pathname === "/") setHeader(false)
+        else setTimeout(() => setHeader(true), 270)
+    }, [location.pathname])
 
     return(
         <AnimatePresence mode="wait">
