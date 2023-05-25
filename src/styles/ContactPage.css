@@ -1,0 +1,50 @@
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-form button{
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.email-form input, textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.email-form label{
+    font-size: large;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icons svg{
+    margin: 20px;
+}
+
+.social-icons a{
+    color: black;
+}
+
+@media screen and (max-width: 300px){
+    .email-form{
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .email-form{
+        width: 450px;
+    }
+}
