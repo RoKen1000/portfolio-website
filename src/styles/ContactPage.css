@@ -5,6 +5,10 @@
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    border: solid rgba(186, 183, 183, 0.625);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: bisque;
 }
 
 .email-form button{
@@ -21,6 +25,12 @@
 
 .email-form label{
     font-size: large;
+}
+
+.email-form p{
+    margin: 0px;
+    margin-top: 10px;
+    background-color: rgb(242, 151, 151);
 }
 
 .social-icons{
