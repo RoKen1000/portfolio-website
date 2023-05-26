@@ -1,0 +1,26 @@
+.desktop-nav-button{
+    padding: 5px 10px 5px 10px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+.desktop-nav-button:hover{
+    transform: scale(1.2, 1.2);
+}
+
+/* .desktop-nav-button:active{
+    background-color: red;
+} */
+
+.desktop-nav-link-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desktop-nav-link-container a{
+    text-decoration: none;
+    color: black;
+}
