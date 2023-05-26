@@ -1,7 +1,14 @@
 
 .about-container{
-    width: 300px;
-    margin: auto
+    margin: auto;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 700px) {
+    .about-container{
+        width: 700px;
+        margin: auto
+    }
 }
 
 .about-container img{
@@ -11,5 +18,4 @@
 
 .about-container p{
     text-align: left;
-    font-size: large;
 }

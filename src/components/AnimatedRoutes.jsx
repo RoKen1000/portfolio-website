@@ -7,6 +7,7 @@ import { Portfolio } from "./Portfolio"
 import { BoardGameReviews } from "./BoardGameReviews"
 import { MapYourDay } from "./MapYourDay"
 import { useEffect } from "react"
+import { ContactPage } from "./ContactPage"
 
 export const AnimatedRoutes = ({setHeader}) => {
 
@@ -26,7 +27,7 @@ export const AnimatedRoutes = ({setHeader}) => {
                 <Route path="/portfolio" element={<Portfolio/>}/>
                 <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
                 <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />
-                <Route path="/contact" />
+                <Route path="/contact" element={<ContactPage/>}/>
             </Routes>
         </AnimatePresence>
     )
