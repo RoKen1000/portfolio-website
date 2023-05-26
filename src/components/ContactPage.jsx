@@ -17,7 +17,6 @@ export const ContactPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if(!/[a-zA-Z]/.test(message)){
-            console.log("here")
             setStopBlankPosing(true)
             return
         }
@@ -39,6 +38,7 @@ export const ContactPage = () => {
             setMessage("")
             setStopBlankPosing(false)
             setError(false)
+            e.target.reset()
         })  
         .catch(() => {
             setError(true)
@@ -53,19 +53,21 @@ export const ContactPage = () => {
                     exit={{opacity: 0}}
                 >
                 <h1 className="page-heading">Contact</h1>
+                <p className="contact-me-description">Any requests or questions? Fill out the form below and I will respond as soon as possible.</p>
                 <form className="email-form" onSubmit={handleSubmit}>
                     <label htmlFor="name">Name</label>
-                    <input type="text" required onChange={e => setName(e.target.value)}></input>
+                    <input type="text" required onChange={e => setName(e.target.value)} id="name"></input>
                     <label htmlFor="email">Email</label>
-                    <input type="email" required onChange={e => setEmail(e.target.value)}></input>
+                    <input type="email" id="email" required onChange={e => setEmail(e.target.value)}></input>
                     <label htmlFor="subject">Subject</label>
-                    <input type="text" required onChange={e => setSubject(e.target.value)}></input>
+                    <input type="text" id="subject" required onChange={e => setSubject(e.target.value)}></input>
                     <label htmlFor="message">Message</label>
-                    <textarea rows={6} cols={30} maxLength={2000} required onChange={e => setMessage(e.target.value)}></textarea>
+                    <textarea rows={6} cols={30} maxLength={2000} id="message" required onChange={e => setMessage(e.target.value)}></textarea>
                     {stopBlankPosting ? <p><strong>Message can not be blank</strong></p> : null}
                     {error ? <p><strong>Something went wrong <br></br>Try again Later</strong></p> : null}
                     <Button type="submit">Submit</Button>
                 </form>
+                <h2 className="socials-heading">Socials:</h2>
                 <div className="social-icons">
                     <a href="https://github.com/RoKen1000">
                         <FontAwesomeIcon icon={faGithub} size="3x"/>
