@@ -1,10 +1,10 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import "../styles/NavImages.css"
+import "../styles/HomeNavImages.css"
 import { faCode, faEnvelope, faFolderOpen, faUser } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom"
 
-export const NavImages = () => {
+export const HomeNavImages = () => {
 
     return (
         <nav>
@@ -16,7 +16,7 @@ export const NavImages = () => {
                     <p>About</p>
                 </div>
                 <div>
-                    <Link to="/tech-skills">
+                    <Link to="/skills">
                         <FontAwesomeIcon icon={faCode} className="icons" size="3x"/>
                     </Link>
                     <p>Skills</p>

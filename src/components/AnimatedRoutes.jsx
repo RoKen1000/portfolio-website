@@ -23,7 +23,7 @@ export const AnimatedRoutes = ({setHeader}) => {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home />}/>
                 <Route path="/about" element={<About />}/>
-                <Route path="/tech-skills" element={<TechSkills />}/>
+                <Route path="/skills" element={<TechSkills />}/>
                 <Route path="/portfolio" element={<Portfolio/>}/>
                 <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
                 <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />

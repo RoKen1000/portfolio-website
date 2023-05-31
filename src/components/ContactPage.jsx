@@ -67,7 +67,7 @@ export const ContactPage = () => {
                     {error ? <p><strong>Something went wrong <br></br>Try again Later</strong></p> : null}
                     <Button type="submit">Submit</Button>
                 </form>
-                <h2 className="socials-heading">Socials:</h2>
+                <h2 className="socials-heading">Socials</h2>
                 <div className="social-icons">
                     <a href="https://github.com/RoKen1000">
                         <FontAwesomeIcon icon={faGithub} size="3x"/>
