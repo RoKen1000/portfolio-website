@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from './components/Header';
 import { AnimatedRoutes } from './components/AnimatedRoutes';
 import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
 
@@ -10,7 +11,9 @@ function App() {
 
   return (
     <div className="App">
-      {header && <Header/>}
+      <AnimatePresence mode="wait">
+        {header && <Header/>}
+      </AnimatePresence>
       <AnimatedRoutes setHeader={setHeader}/>
     </div>
   );
