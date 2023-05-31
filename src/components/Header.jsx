@@ -4,7 +4,7 @@ import { MobileNavPanel } from "./MobileNavPanel"
 import { motion } from "framer-motion"
 import { DesktopNavBar } from "./DesktopNavBar"
 
-export const Header = () => {
+export const Header = ({buttonClicked, setButtonClicked}) => {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     
@@ -25,7 +25,7 @@ export const Header = () => {
                     <h1><strong>Ross Kennedy</strong></h1>
                     <h2><strong>Full Stack Developer</strong></h2>
                     {windowWidth < 600 && <MobileNavPanel />}
-                    {windowWidth >= 600 && <DesktopNavBar/>}
+                    {windowWidth >= 600 && <DesktopNavBar buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>}
                 </header>
              </motion.div>
     )

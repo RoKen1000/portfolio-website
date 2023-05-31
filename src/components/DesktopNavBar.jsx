@@ -3,19 +3,19 @@ import "../styles/DesktopNavBar.css"
 import "../styles/ClickedButton.css"
 import { useState } from "react"
 
-export const DesktopNavBar = () => {
+export const DesktopNavBar = ({buttonClicked, setButtonClicked}) => {
 
-    const [buttonClicked, setButtonClicked] = useState("")
+    // const [buttonClicked, setButtonClicked] = useState("")
 
     const handleClick = (e) => setButtonClicked(e.target.id);
 
     return(
         <nav className="desktop-nav-link-container">
-            <NavLink className={buttonClicked === "button-1" ? "clicked-button" : null} onClick={handleClick} id="button-1" to="/about">About</NavLink>
-            <NavLink className={buttonClicked === "button-2" ? "clicked-button" : null} onClick={handleClick} id="button-2" to="/skills">Skills</NavLink>
-            <NavLink className={buttonClicked === "button-3" ? "clicked-button" : null} onClick={handleClick} id="button-3"to="/portfolio">Portfolio</NavLink>
-            <NavLink className={buttonClicked === "button-4" ? "clicked-button" : null} onClick={handleClick} id="button-4"to="/contact">Contact</NavLink>
-            <NavLink className={buttonClicked === "button-5" ? "clicked-button" : null} onClick={handleClick} id="button-5"to="/">Home</NavLink>             
+            <NavLink className={buttonClicked === "about-nav-button" ? "clicked-button" : null} onClick={handleClick} id="about-nav-button" to="/about">About</NavLink>
+            <NavLink className={buttonClicked === "skills-nav-button" ? "clicked-button" : null} onClick={handleClick} id="skills-nav-button" to="/skills">Skills</NavLink>
+            <NavLink className={buttonClicked === "portfolio-nav-button" ? "clicked-button" : null} onClick={handleClick} id="portfolio-nav-button" to="/portfolio">Portfolio</NavLink>
+            <NavLink className={buttonClicked === "contact-nav-button" ? "clicked-button" : null} onClick={handleClick} id="contact-nav-button" to="/contact">Contact</NavLink>
+            <NavLink className={buttonClicked === "home-nav-button" ? "clicked-button" : null} onClick={handleClick} id="home-nav-button" to="/">Home</NavLink>             
         </nav>
     )
 }

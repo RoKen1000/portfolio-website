@@ -8,13 +8,14 @@ import { AnimatePresence } from 'framer-motion';
 function App() {
 
   const [header, setHeader] = useState(false)
+  const [buttonClicked, setButtonClicked] = useState("")
 
   return (
     <div className="App">
       <AnimatePresence mode="wait">
-        {header && <Header/>}
+        {header && <Header buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>}
       </AnimatePresence>
-      <AnimatedRoutes setHeader={setHeader}/>
+      <AnimatedRoutes setHeader={setHeader} setButtonClicked={setButtonClicked}/>
     </div>
   );
 }
