@@ -2,7 +2,7 @@ import { useLocation, Route, Routes } from "react-router-dom"
 import { Home } from "./Home"
 import { About } from "./About"
 import { AnimatePresence } from "framer-motion"
-import { TechSkills } from "./TechSkills"
+import { Skills } from "./Skills"
 import { Portfolio } from "./Portfolio"
 import { BoardGameReviews } from "./BoardGameReviews"
 import { MapYourDay } from "./MapYourDay"
@@ -26,7 +26,7 @@ export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home setButtonClicked={setButtonClicked}/>}/>
                 <Route path="/about" element={<About />}/>
-                <Route path="/skills" element={<TechSkills />}/>
+                <Route path="/skills" element={<Skills />}/>
                 <Route path="/portfolio" element={<Portfolio/>}/>
                 <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
                 <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />
