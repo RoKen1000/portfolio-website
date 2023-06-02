@@ -69,11 +69,11 @@ export const ContactPage = () => {
                 </form>
                 <h2 className="socials-heading">Socials</h2>
                 <div className="social-icons">
-                    <a href="https://github.com/RoKen1000">
-                        <FontAwesomeIcon icon={faGithub} size="3x"/>
+                    <a href="https://github.com/RoKen1000" name="GitHub">
+                        <FontAwesomeIcon icon={faGithub} size="3x" alt="GitHub"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/ross-kennedy-2735a7237/">
-                        <FontAwesomeIcon icon={faLinkedin} size="3x"/>
+                    <a href="https://www.linkedin.com/in/ross-kennedy-2735a7237/" name="LinkedIn">
+                        <FontAwesomeIcon icon={faLinkedin} size="3x" alt="LinkedIn"/>
                     </a>
                 </div>
             </motion.div>
