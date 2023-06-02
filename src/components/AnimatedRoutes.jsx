@@ -9,21 +9,24 @@ import { MapYourDay } from "./MapYourDay"
 import { useEffect } from "react"
 import { ContactPage } from "./ContactPage"
 
-export const AnimatedRoutes = ({setHeader}) => {
+export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
 
     const location = useLocation()
     
     useEffect(() => {
-        if(location.pathname === "/") setHeader(false)
+        if(location.pathname === "/"){
+            setHeader(false)
+            setButtonClicked("")
+        }
         else setTimeout(() => setHeader(true), 270)
     }, [location.pathname])
 
     return(
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<Home />}/>
+                <Route path="/" element={<Home setButtonClicked={setButtonClicked}/>}/>
                 <Route path="/about" element={<About />}/>
-                <Route path="/tech-skills" element={<TechSkills />}/>
+                <Route path="/skills" element={<TechSkills />}/>
                 <Route path="/portfolio" element={<Portfolio/>}/>
                 <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
                 <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />

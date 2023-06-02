@@ -13,7 +13,7 @@ export const MobileNavPanel = () => {
 
     return(
         <nav>
-            <FontAwesomeIcon icon={faBars} onClick={handleShow}/>
+            <FontAwesomeIcon id="mobile-nav-icon" icon={faBars} onClick={handleShow}/>
             <Offcanvas show={show} onHide={handleClose} >
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Where to?</Offcanvas.Title>
@@ -23,7 +23,7 @@ export const MobileNavPanel = () => {
                             <FontAwesomeIcon icon={faUser} className="mobile-nav-icons" size="3x"/>
                             <p>About</p>
                         </NavLink>
-                        <NavLink to="/tech-skills" className="mobile-nav-link" onClick={handleClose}>
+                        <NavLink to="/skills" className="mobile-nav-link" onClick={handleClose}>
                             <FontAwesomeIcon icon={faCode} className="mobile-nav-icons" size="3x"/>
                             <p>Skills</p>
                         </NavLink>

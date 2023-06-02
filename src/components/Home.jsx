@@ -1,9 +1,9 @@
 import me from "../images/dummy-me.png"
-import { NavImages } from "./NavImages"
+import { HomeNavImages } from "./HomeNavImages"
 import "../styles/Home.css"
 import { motion } from "framer-motion"
 
-export const Home = () => {
+export const Home = ({setButtonClicked}) => {
 
     return(
         <main>
@@ -29,7 +29,7 @@ export const Home = () => {
                     </div>
                     <div className="image-container">
                         <img src={me} alt="Ross Kennedy" id="landing-image"></img>
-                        <NavImages />
+                        <HomeNavImages setButtonClicked={setButtonClicked} />
                     </div>
                 </div>
             </motion.div>
