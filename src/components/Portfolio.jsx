@@ -35,7 +35,7 @@ export const Portfolio = () => {
                                 <Card.Body>
                                     <Card.Title><strong>NC Games<br></br>Board Game Review Website</strong></Card.Title>
                                     <Card.Text>
-                                        This <strong>full-stack CRUD</strong> website written in <strong>JavaScript</strong> was a project I created as part of the Northcoders Boot Camp. The website allows users to read and filter board-game reviews. They can also vote and post comments on the reviews. This project uses <strong>PostgreSQL</strong> for the back-end database and <strong>React</strong> for the front-end.
+                                        This <strong>full-stack CRUD</strong> website written in <strong>JavaScript</strong> was a project I created as part of the Northcoders Boot Camp. The website allows users to read and interact with board-game reviews.
                                     </Card.Text>
                                     <Button type="button" onClick={() => navigate("/portfolio/board-game-reviews")} variant="primary">Learn More</Button>
                                 </Card.Body>
