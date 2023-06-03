@@ -2,11 +2,17 @@ import "../styles/PortfolioArticle.css"
 import example from "../images/nc-games-example.png"
 import Button from "react-bootstrap/Button"
 import { motion } from "framer-motion"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
+import { useEffect } from "react"
 
 export const BoardGameReviews = () => {
 
     const navigate = useNavigate()
+    const {pathname} = useLocation()
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [pathname])
     
     return(
         <main className="portfolio-article-page">

@@ -47,7 +47,7 @@ export const Portfolio = () => {
                                 <Card.Body>
                                     <Card.Title><strong>Map Your Day<br></br>Map-Based To Do List App</strong></Card.Title>
                                     <Card.Text>
-                                        This was a group project as part of the Northcoders Boot Camp. The app allows users to create to do lists and to place the task locations on a map so they can track what they need to do when on the go. This <strong>JavaScript</strong> project uses <strong>Firebase</strong> for the back-end and <strong>React</strong> for the front-end. The <strong>MapBox API</strong> is used to provide the map and geodata.
+                                        This app allows users to create to do lists and to place the task locations on a map so they can track what they need to do and where when on the go.
                                     </Card.Text>
                                     <Button type="button" onClick={() => navigate("/portfolio/map-your-day")}  variant="primary">Learn More</Button>
                                 </Card.Body>
