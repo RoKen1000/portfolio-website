@@ -27,7 +27,7 @@ export const Portfolio = () => {
                     exit={{opacity: 0}}
                 > 
                 <h1 className="page-heading">Portfolio</h1>
-                <Container className="portfolio-grid">
+                <Container>
                     <Row xs={1} sm={1} md={1} lg={2}>
                         <Col>
                             <Card className="portfolio-cards">
@@ -35,7 +35,7 @@ export const Portfolio = () => {
                                 <Card.Body>
                                     <Card.Title><strong>NC Games<br></br>Board Game Review Website</strong></Card.Title>
                                     <Card.Text>
-                                        This <strong>full-stack CRUD</strong> website written in <strong>JavaScript</strong> was a project I created as part of the Northcoders Boot Camp. The website allows users to read and interact with board-game reviews.
+                                        This full-stack CRUD website written in JavaScript was a project I created as part of the Northcoders Boot Camp. The website allows users to read and interact with board-game reviews.
                                     </Card.Text>
                                     <Button type="button" onClick={() => navigate("/portfolio/board-game-reviews")} variant="primary">Learn More</Button>
                                 </Card.Body>
@@ -47,7 +47,7 @@ export const Portfolio = () => {
                                 <Card.Body>
                                     <Card.Title><strong>Map Your Day<br></br>Map-Based To Do List App</strong></Card.Title>
                                     <Card.Text>
-                                        This app allows users to create to do lists and to place the task locations on a map so they can track what they need to do and where when on the go.
+                                        This app allows users to create location-based to do lists. Users can place task locations on a map so they can track what they need to do and where a task needs to be done when out and about. 
                                     </Card.Text>
                                     <Button type="button" onClick={() => navigate("/portfolio/map-your-day")}  variant="primary">Learn More</Button>
                                 </Card.Body>
