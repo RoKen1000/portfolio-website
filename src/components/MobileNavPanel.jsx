@@ -21,7 +21,12 @@ export const MobileNavPanel = () => {
                     <Offcanvas.Title>Where to?</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                        <NavLink to="/about" className="mobile-nav-link" onClick={handleClose} id="top">
+                        <NavLink to="/" className="mobile-nav-link" id="top" onClick={handleClose}>
+                            <FontAwesomeIcon icon={faHome} className="mobile-nav-icons" 
+                            alt="Icon of a house linking to the home page." size="3x"/>
+                            <p>Home</p>
+                        </NavLink>
+                        <NavLink to="/about" className="mobile-nav-link" onClick={handleClose}>
                             <FontAwesomeIcon icon={faUser} className="mobile-nav-icons"
                             alt="Icon of a person linking to the about page." size="3x"/>
                             <p>About</p>
@@ -40,11 +45,6 @@ export const MobileNavPanel = () => {
                             <FontAwesomeIcon icon={faEnvelope} className="mobile-nav-icons"
                             alt="Icon of an envelope linking to the contact page." size="3x"/>
                             <p>Contact</p>
-                        </NavLink>
-                        <NavLink to="/" className="mobile-nav-link" onClick={handleClose}>
-                            <FontAwesomeIcon icon={faHome} className="mobile-nav-icons"
-                            alt="Icon of a house linking to the home page." size="3x"/>
-                            <p>Home</p>
                         </NavLink>
                 </Offcanvas.Body>
             </Offcanvas>
