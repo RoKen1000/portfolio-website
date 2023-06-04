@@ -1,9 +1,19 @@
-import me from "../images/dummy-me.png"
+import me from "../images/rk2-c.png"
+import me2 from "../images/rk2.jpg"
 import { HomeNavImages } from "./HomeNavImages"
 import "../styles/Home.css"
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 export const Home = ({setButtonClicked}) => {
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    
+    useEffect(() => {
+        const handleWindowResize = () => setWindowWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize)
+        return () => window.removeEventListener("resize", setWindowWidth)
+    }, [])
 
     return(
         <main>
@@ -28,7 +38,8 @@ export const Home = ({setButtonClicked}) => {
                         </motion.div>
                     </div>
                     <div className="image-container">
-                        <img src={me} alt="Ross Kennedy" id="landing-image"></img>
+                        {windowWidth < 800 && <img src={me} alt="Ross Kennedy" id="landing-image"></img>}
+                        {windowWidth >= 800 && <img src={me2} alt="Ross Kennedy" id="larger-landing-image"></img>}
                         <HomeNavImages setButtonClicked={setButtonClicked} />
                     </div>
                 </div>

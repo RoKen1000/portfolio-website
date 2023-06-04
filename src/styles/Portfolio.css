@@ -27,7 +27,6 @@
 .portfolio-cards p{
     text-align: left;
     margin-left: 10px;
-    align-items: center;
 }
 
 .portfolio-page h2{
@@ -36,11 +35,27 @@
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 575px){
     #website-portfolio-card{
         width: 500px;
         margin-left: auto;
         margin-right: auto;
+        height: auto;
+    }
+    .portfolio-cards{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .portfolio-cards{
+        height: 430px;
+        width: auto;
+    }
+    #website-portfolio-card{
+        margin: auto;
     }
 }
 
