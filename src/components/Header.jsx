@@ -16,14 +16,11 @@ export const Header = ({buttonClicked, setButtonClicked}) => {
 
     return(
             <motion.div
-                    key="modal"
                     initial={{y: -200}}
                     animate={{y: 0}}
                     exit={{y: -200}}
                 > 
                 <header className="header">
-                    <h1><strong>Ross Kennedy</strong></h1>
-                    <h2><strong>Full Stack Developer</strong></h2>
                     {windowWidth < 600 && <MobileNavPanel />}
                     {windowWidth >= 600 && <DesktopNavBar buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>}
                 </header>

@@ -13,6 +13,8 @@ export const MobileNavPanel = () => {
 
     return(
         <nav>
+            <h1><strong>Ross Kennedy</strong></h1>
+            <h2><strong>Full Stack Developer</strong></h2>
             <FontAwesomeIcon id="mobile-nav-icon" icon={faBars} onClick={handleShow}/>
             <Offcanvas show={show} onHide={handleClose} >
                 <Offcanvas.Header closeButton>
