@@ -30,6 +30,12 @@
     }
 }
 
+@media screen and (max-width: 374px){
+    .landing-page{
+        overflow: hidden;
+    }
+}
+
 .landing-page body{
     height: 100vh;
     background-position: center;
