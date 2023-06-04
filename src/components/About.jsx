@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import "../styles/About.css"
-import me from "../images/dummy-me.png"
+import me from "../images/rk1-c.png"
 
 export const About = () => {
 

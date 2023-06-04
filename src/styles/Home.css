@@ -6,17 +6,27 @@
 #landing-image{
     width: 250px;
     margin: 20px;
-    border: solid black;
-    border-radius: 30px;
     position: absolute;
+    right: 10px;
+    top: 40px
+}
+
+#larger-landing-image{
+    width: 600px;
+    margin: 20px;
+    border-radius: 30px;
     right: 10px;
     top: 40px
 }
 
 @media screen and (max-width: 300px){
     #landing-image{
-        left: 100px;
-        top: 40px;  
+        left: 70px;
+        top: 30px;
+        width: 230px;  
+    }
+    .landing-page{
+        overflow: hidden;
     }
 }
 
