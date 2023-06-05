@@ -13,14 +13,17 @@ export const ContactPage = () => {
     const [message, setMessage] = useState("")
     const [stopBlankPosting, setStopBlankPosing] = useState(false)
     const [error, setError] = useState(false)
+    const [successfulSubmit, setSuccessfulSubmit] = useState(false)
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
+        setSuccessfulSubmit(false)
+        setError(false)
         if(!/[a-zA-Z]/.test(message)){
             setStopBlankPosing(true)
             return
         }
-        fetch("https://formsubmit.co/ajax/ca3403ac16aa3a4cffd7675715acde44 ", {
+        fetch("https://formsubmit.co/ajax/ca3403ac16aa3a4cffd7675715acde44", {
             method: "POST",
             headers:{
                 'Content-Type': 'application/json',
@@ -32,6 +35,7 @@ export const ContactPage = () => {
         })
         .then(response => response.json())
         .then(() => {
+            setSuccessfulSubmit(true)
             setName("")
             setEmail("")
             setSubject("")
@@ -63,11 +67,11 @@ export const ContactPage = () => {
                     <input type="text" id="subject" required onChange={e => setSubject(e.target.value)}></input>
                     <label htmlFor="message">Message</label>
                     <textarea rows={6} cols={30} maxLength={2000} id="message" required onChange={e => setMessage(e.target.value)}></textarea>
-                    {stopBlankPosting ? <p><strong>Message can not be blank</strong></p> : null}
-                    {error ? <p><strong>Something went wrong <br></br>Try again Later</strong></p> : null}
+                    {stopBlankPosting && <p><strong>Message can not be blank.</strong></p>}
+                    {error && <p><strong>Something went wrong. <br></br>Try again Later.</strong></p>}
+                    {successfulSubmit && <p id="success">Submission successful. Thanks!</p>}
                     <Button type="submit">Submit</Button>
                 </form>
-                <h2 className="socials-heading">Socials</h2>
                 <div className="social-icons">
                     <a href="https://github.com/RoKen1000" name="GitHub">
                         <FontAwesomeIcon icon={faGithub} size="3x" alt="GitHub"/>

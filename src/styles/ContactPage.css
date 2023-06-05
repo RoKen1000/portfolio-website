@@ -33,8 +33,8 @@
     background-color: rgb(242, 151, 151);
 }
 
-.socials-heading{
-    margin-top: 20px;
+#success{
+    background-color: rgb(130, 233, 130);
 }
 
 .contact-me-description{
@@ -78,16 +78,4 @@
         margin-right: auto;
         width: 400px;
     }
-}
-
-@media screen and (min-width: 800px){
-    /* .email-form{
-        position: absolute;
-        margin-left: 25%;
-    } */
-    /* .social-icons{
-        position: absolute;
-        bottom: 40%;
-        margin-left: 65%;
-    } */
 }
