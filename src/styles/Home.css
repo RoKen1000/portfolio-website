@@ -8,7 +8,7 @@
     margin: 20px;
     position: absolute;
     left: 45px;
-    top: 100px
+    top: 60px
 }
 
 #larger-landing-image{
@@ -38,12 +38,16 @@
     position: relative;
 }
 
+@media screen and(min-width: 400px){
+}
+
 @media screen and (min-width: 450px){
     .landing-page{
         overflow: none;
     }
     #landing-titles{
         width: auto;
+        text-align: center;
     }
 }
 
@@ -67,9 +71,6 @@
 }
 
 @media screen and (min-width: 800px){
-    #landing-titles {
-        text-align: center;
-    }
     .image-container{
         display: flex;
         flex-direction: column;
@@ -87,5 +88,5 @@
     width: 500px;
     flex-direction: row;
     align-items: center;
-    margin-left: 75px;
+    margin-left: 150px;
 }

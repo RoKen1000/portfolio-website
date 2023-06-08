@@ -56,7 +56,7 @@ export const Home = ({setButtonClicked}) => {
                             animate={{opacity: 1, transition: {delay: 2.8}}}>
                             {windowWidth < 800 && <img src={me3} alt="Ross Kennedy" id="landing-image"></img>}
                             {windowWidth >= 800 && <img src={me3} alt="Ross Kennedy" id="larger-landing-image"></img>}
-                                {windowWidth >= 800 && <p id="experience-in" className="landing-page-tech-words">With experience in{"\u00A0"} 
+                                {windowWidth >= 800 && <p id="experience-in" className="landing-page-tech-words">Experienced in{"\u00A0"} 
                                 <AnimatePresence mode="wait">
                                     <motion.span
                                     key={currentPhrase}
@@ -68,16 +68,6 @@ export const Home = ({setButtonClicked}) => {
                                     </motion.span>
                                 </AnimatePresence>
                                 </p>}
-                            {windowWidth < 800 && <AnimatePresence mode="wait">
-                                <motion.span
-                                key={currentPhrase}
-                                initial={{opacity: 0}}
-                                animate={{opacity: 1, transition: {duration: 0.5 }}}
-                                exit={{opacity: 0}}
-                                >
-                                    <p className="landing-page-tech-words"><strong>{currentPhrase}</strong></p>
-                                </motion.span>
-                            </AnimatePresence>}
                         </motion.div>
                         <motion.div
                         initial={{opacity: 0, y: 50}}
