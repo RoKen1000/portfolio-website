@@ -73,10 +73,10 @@ export const ContactPage = () => {
                     <Button type="submit">Submit</Button>
                 </form>
                 <div className="social-icons">
-                    <a href="https://github.com/RoKen1000" name="GitHub">
+                    <a href="https://github.com/RoKen1000" rel="noreferrer" target="_blank" name="GitHub">
                         <FontAwesomeIcon icon={faGithub} size="3x" alt="GitHub"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/ross-kennedy-2735a7237/" name="LinkedIn">
+                    <a href="https://www.linkedin.com/in/ross-kennedy-2735a7237/" rel="noreferrer" target="_blank" name="LinkedIn">
                         <FontAwesomeIcon icon={faLinkedin} size="3x" alt="LinkedIn"/>
                     </a>
                 </div>
