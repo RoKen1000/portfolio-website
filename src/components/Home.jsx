@@ -71,9 +71,9 @@ export const Home = ({setButtonClicked}) => {
                             {windowWidth < 800 && <AnimatePresence mode="wait">
                                 <motion.span
                                 key={currentPhrase}
-                                initial={{opacity: 0, y: -10}}
-                                animate={{opacity: 1, y: 0, transition: {duration: 0.5 }}}
-                                exit={{opacity: 0, y: 10}}
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1, transition: {duration: 0.5 }}}
+                                exit={{opacity: 0}}
                                 >
                                     <p className="landing-page-tech-words"><strong>{currentPhrase}</strong></p>
                                 </motion.span>
