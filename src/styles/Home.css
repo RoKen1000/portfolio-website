@@ -1,33 +1,25 @@
 .landing-page{
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(255, 228, 196), rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom, rgb(225, 188, 142), rgb(255, 255, 255));
 }
 
 #landing-image{
-    width: 250px;
+    width: 300px;
     margin: 20px;
     position: absolute;
-    right: 10px;
-    top: 40px
+    left: 45px;
+    top: 100px
 }
 
 #larger-landing-image{
     width: 600px;
-    margin: 20px;
-    border-radius: 30px;
-    right: 10px;
-    top: 40px
 }
 
-@media screen and (max-width: 300px){
-    #landing-image{
-        left: 70px;
-        top: 30px;
-        width: 230px;  
-    }
-    .landing-page{
-        overflow: hidden;
-    }
+.landing-page-tech-words{
+    font-size: xx-large;
+    margin: 0px;
+    position: relative;
+    bottom: 11px;
 }
 
 @media screen and (max-width: 374px){
@@ -36,15 +28,10 @@
     }
 }
 
-.landing-page body{
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
-
 #landing-titles{
-    margin: 20px;
+    padding: 10px;
     text-align: left;
+    width: 300px;
 }
 
 .image-container{
@@ -52,43 +39,53 @@
 }
 
 @media screen and (min-width: 450px){
-    .landing-page img{
-        width: 350px;
-        left: 150px;
-        top: 40px;  
-    }
     .landing-page{
         overflow: none;
     }
-    .image-container{
-        position: none;
+    #landing-titles{
+        width: auto;
     }
 }
 
-@media screen and (min-width: 650px){
+@media screen and (min-width: 375px) {
+    .landing-page-phrases{
+        position: static;
+    }
+}
+
+@media screen and (min-width: 450px) {
     #landing-image{
-        width: 350px;
-        left: 250px; 
+        left: 100px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    #landing-image{
+        width: 450px;
+        left: 150px;
     }
 }
 
 @media screen and (min-width: 800px){
-    #landing-image{
-        width: 450px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        position: static;
-    }
     #landing-titles {
-        margin-left: 200px;
-        text-align: left;
+        text-align: center;
     }
     .image-container{
-        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .landing-page{
+        background-color: burlywood;
+        height: 580px;
+        background-image: none;   
+    }
+}
+
+#experience-in{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 75px;
 }
