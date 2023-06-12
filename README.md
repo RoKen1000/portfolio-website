@@ -1,70 +1,15 @@
-# Getting Started with Create React App
+# Summary
+My first project after the Northcoders bootcamp is now complete and I am proud to announce that my Portfolio Website is now live. I built this website from scratch using JavaScript, React, JSX and CSS. It is fully responsive for mobile, tablet and desktop views.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Experience Gained
+This has helped me improve my front-end development skills greatly by understanding how to properly use various different position properties in CSS, as well as improving my knowledge of React by using the useRef() hook to periodically change the text in the “Experienced in…” part of the homepage which appears for desktop-sized views.
 
-## Available Scripts
+# Libraries Used
+This has been a great opportunity for me to look at and utilise other libraries for use with React, in particular React Bootstrap and Framer Motion. 
 
-In the project directory, you can run:
+With React Bootstrap I used their card grid system to create the cards seen in the Skills and Portfolio sections as well as the Offcanvas element to create the navigation panel for mobile-sized viewports. 
 
-### `npm start`
+Framer Motion is what powers the seamless page transitions when navigating from one section to the next. This is achieved using the AnimatePresence component which triggers whenever components are added to or removed from the DOM. It also creates the rotating effect seen in the “Experienced in…” text as well as the fade-in for the text and image seen on the homepage. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Submission Form
+The submission form seen in the contact page utilises the <a href="https://formsubmit.co/" >FormSubmit API</a> to send emails from the submitted form. 

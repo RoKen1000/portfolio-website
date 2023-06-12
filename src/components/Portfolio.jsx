@@ -62,7 +62,7 @@ export const Portfolio = () => {
                                 <Card.Body>
                                     <Card.Title><strong>This Website</strong></Card.Title>
                                     <Card.Text>
-                                        This website has been created using <strong>JavaScript, React, React Bootstrap, JSX, Framer Motion and CSS</strong>.
+                                        This website has been created using <strong>JavaScript, React, React Bootstrap, JSX, Framer Motion and CSS</strong>. <a href="https://github.com/RoKen1000/portfolio-website">View the repo here.</a>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
