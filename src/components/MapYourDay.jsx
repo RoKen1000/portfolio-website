@@ -24,8 +24,8 @@ export const MapYourDay = () => {
                 <h1>Map Your Day</h1>
                 <article>
                     <ul className="portfolio-article-links">
-                        <li><a href="https://github.com/Little-Wolfie/listodo">Link to project GitHub</a></li>
-                        <li><a href="https://map-your-day-app.netlify.app">Link to hosted app</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://github.com/Little-Wolfie/listodo">Link to project GitHub</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://map-your-day-app.netlify.app">Link to hosted app</a></li>
                     </ul>
                     <figure>
                         <img src={myd} alt="Screenshot of the dashboard of the Map Your Day app."></img>

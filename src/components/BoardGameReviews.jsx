@@ -24,10 +24,10 @@ export const BoardGameReviews = () => {
                 <h1>Board Game Review Website - NC Games</h1>
                 <article>
                     <ul className="portfolio-article-links">
-                        <li><a href="https://github.com/RoKen1000/RK-Backend-Games-Portfolio-Piece">Link to back-end GitHub</a></li>
-                        <li><a href="https://nc-games-service.onrender.com/api">Link to hosted back-end</a></li>
-                        <li><a href="https://github.com/RoKen1000/RK-Frontend-Games-Portfolio-Piece">Link to front-end GitHub</a></li>
-                        <li><a href="https://nc-game-review-site.netlify.app/">Link to hosted website</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://github.com/RoKen1000/RK-Backend-Games-Portfolio-Piece">Link to back-end GitHub</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://nc-games-service.onrender.com/api">Link to hosted back-end</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://github.com/RoKen1000/RK-Frontend-Games-Portfolio-Piece">Link to front-end GitHub</a></li>
+                        <li><a rel="noreferrer" target="_blank" href="https://nc-game-review-site.netlify.app/">Link to hosted website</a></li>
                     </ul>
                     <figure>                   
                         <img src={example} alt="Screenshot of an article taken from the NC Games website."></img>
