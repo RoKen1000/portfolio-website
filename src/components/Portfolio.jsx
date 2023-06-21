@@ -9,6 +9,7 @@ import Button from "react-bootstrap/Button"
 import { useNavigate, useLocation } from "react-router-dom"
 import { motion } from "framer-motion"
 import { useEffect } from "react"
+import calc from "../images/calc.png"
 
 export const Portfolio = () => {
 
@@ -53,7 +54,19 @@ export const Portfolio = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
+                    </Row>
+                    <Row>
                         <Col>
+                            <Card className="portfolio-cards" id="second-row-card">
+                                <Card.Img variant="top" src={calc} id="calc"/>
+                                <Card.Body>
+                                    <Card.Title><strong>TypeScript Calculator</strong></Card.Title>
+                                    <Card.Text>
+                                        My first project written in TypeScript. This calculator app can calculate simple arithmetic as well as more complex calculations while following BIDMAS order of operations.
+                                    </Card.Text>
+                                    <Button className="portfolio-card-buttons" type="button" onClick={() => navigate("/portfolio/typescript-calculator")} variant="primary">Learn More</Button>
+                                </Card.Body>
+                            </Card>
                         </Col>
                     </Row>
                     <Row>

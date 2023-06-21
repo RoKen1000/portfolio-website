@@ -8,6 +8,7 @@ import { BoardGameReviews } from "./BoardGameReviews"
 import { MapYourDay } from "./MapYourDay"
 import { useEffect } from "react"
 import { ContactPage } from "./ContactPage"
+import { TypeScriptCalculator } from "./TypeScriptCalculator"
 
 export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
 
@@ -30,6 +31,7 @@ export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
                 <Route path="/portfolio" element={<Portfolio/>}/>
                 <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
                 <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />
+                <Route path="/portfolio/typescript-calculator" element={<TypeScriptCalculator />} />
                 <Route path="/contact" element={<ContactPage/>}/>
             </Routes>
         </AnimatePresence>

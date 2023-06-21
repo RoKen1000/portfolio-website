@@ -58,4 +58,7 @@
         width: 650px;
         margin: 10px auto 10px auto;
     }
+    #calculator-screenshot{
+        width: 600px;     
+    }
 }
