@@ -95,7 +95,7 @@ export const Skills = () => {
                                         <FontAwesomeIcon icon={faBookOpenReader} size="4x" id="icon" /><br></br>
                                     <Card.Text >
                                         My Software Development journey has only just begun. As well as building on the foundation of skills I learned at Northcoders, 
-                                        I am currently learning how to use <strong>TypeScript</strong>, <strong>PHP</strong> and <strong>Angular</strong>. Portfolio projects utilising these new frameworks and languages are soon to follow.
+                                        I am currently learning how to use <strong>TypeScript</strong>, <strong>C#</strong>, <strong>.NET Core</strong> and <strong>ASP.NET</strong>. Portfolio projects utilising these new frameworks and languages are soon to follow.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
