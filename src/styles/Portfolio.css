@@ -26,6 +26,12 @@
     margin-top: 20px;
 }
 
+#italian-flag{
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
 .portfolio-cards{
     margin-bottom: 40px;
     background-color: beige;
@@ -58,9 +64,6 @@
     .portfolio-cards{
         width: auto;
     }
-    #second-row-card{
-        width: 700px;
-    }
     .portfolio-card-buttons{
         position: relative;
         left: 0;
@@ -69,6 +72,10 @@
     #website-portfolio-card{
         margin: auto;
         width: 450px;
+    }
+    #italian-flag{
+        margin-top: 26px;
+        width: 250px;
     }
 }
 
