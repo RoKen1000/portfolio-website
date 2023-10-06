@@ -9,7 +9,7 @@
 
 .portfolio-article-page img{
     width: 300px;
-    border: solid black;
+    border: solid black 1px;
     border-radius: 20px;
 }
 
@@ -60,5 +60,8 @@
     }
     #calculator-screenshot{
         width: 600px;     
+    }
+    #conj-screenshot{
+        width: 450px;
     }
 }
