@@ -45,6 +45,12 @@
     margin-top: 0px;
 }
 
+@media screen and (min-width: 600px){
+    #opticron-screenshot{
+        width: 600px;
+    }
+}
+
 @media screen and (min-width: 700px){
     .portfolio-article-page p{
         width: 700px;
@@ -63,5 +69,8 @@
     }
     #conj-screenshot{
         width: 450px;
+    }
+    #opticron-screenshot{
+        width: 700px;
     }
 }
