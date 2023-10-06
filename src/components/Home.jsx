@@ -68,7 +68,7 @@ export const Home = ({setButtonClicked}) => {
 
                         <motion.div 
                             initial={{opacity: 0}}
-                            animate={{opacity: 1, transition: {delay: 3.8, duration: 0.5}}}>
+                            animate={{opacity: 1, transition: {delay: 4.8, duration: 0.5}}}>
                                 {windowWidth >= 800 && <p id="experience-in" className="landing-page-tech-words">Experienced in{"\u00A0"} 
                                 <AnimatePresence mode="wait">
                                     <motion.span
