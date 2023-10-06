@@ -4,11 +4,11 @@ import { About } from "./About"
 import { AnimatePresence } from "framer-motion"
 import { Skills } from "./Skills"
 import { Portfolio } from "./Portfolio"
-import { BoardGameReviews } from "./BoardGameReviews"
-import { MapYourDay } from "./MapYourDay"
+import { BoardGameReviews } from "./portfolio-articles/BoardGameReviews"
+import { MapYourDay } from "./portfolio-articles/MapYourDay"
 import { useEffect } from "react"
 import { ContactPage } from "./ContactPage"
-import { TypeScriptCalculator } from "./TypeScriptCalculator"
+import { TypeScriptCalculator } from "./portfolio-articles/TypeScriptCalculator"
 
 export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
 

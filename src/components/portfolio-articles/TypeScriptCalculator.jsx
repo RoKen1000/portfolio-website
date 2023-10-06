@@ -2,8 +2,8 @@ import Button from "react-bootstrap/Button"
 import { motion } from "framer-motion"
 import { useNavigate, useLocation } from "react-router-dom"
 import { useEffect } from "react"
-import "../styles/PortfolioArticle.css"
-import calculator from "../images/calculator.png"
+import "../../styles/PortfolioArticle.css"
+import calculator from "../../images/calculator.png"
 
 export const TypeScriptCalculator = () => {
 
