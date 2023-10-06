@@ -11,6 +11,7 @@ import { motion } from "framer-motion"
 import { useEffect } from "react"
 import calc from "../images/calc.png"
 import flag from "../images/italian-flag.png"
+import binoculars from "../images/binoculars.png"
 
 export const Portfolio = () => {
 
@@ -81,6 +82,20 @@ export const Portfolio = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
+                    </Row>
+                    <Row>
+                    <Col>
+                        <Card className="portfolio-cards" id="last-card">
+                            <Card.Img variant="top" src={binoculars} id="binoculars"/>
+                                <Card.Body>
+                                    <Card.Title><strong>Opticron Website</strong></Card.Title>
+                                    <Card.Text>
+                                        This is a main page for a commercial website written in C# and ASP.NET MVC. The project also features a content management page to manipulate what appears on the page. 
+                                    </Card.Text>
+                                    <Button className="portfolio-card-buttons" type="button" onClick={() => navigate("/portfolio/opticron")} variant="primary">Learn More</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>                 
                     </Row>                    
                     <Row>
                         <Col>
@@ -88,7 +103,7 @@ export const Portfolio = () => {
                                 <Card.Body>
                                     <Card.Title><strong>This Website</strong></Card.Title>
                                     <Card.Text>
-                                        This website has been created using <strong>JavaScript, React, React Bootstrap, JSX, Framer Motion and CSS</strong>. <a rel="noreferrer" target="_blank" href="https://github.com/RoKen1000/portfolio-website">View the repo here.</a>
+                                        This website has been created using JavaScript, React, React Bootstrap, JSX, Framer Motion and CSS. <a rel="noreferrer" target="_blank" href="https://github.com/RoKen1000/portfolio-website">View the repo here.</a>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
