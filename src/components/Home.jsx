@@ -6,7 +6,7 @@ import { useEffect, useState, useRef } from "react"
 
 export const Home = ({setButtonClicked}) => {
 
-    const techWords = ["HTML", "CSS", "JavaScript", "Node.js", "PSQL", "Firebase", "React"]
+    const techWords = ["HTML", "CSS", "JavaScript", "Node.js", "C#", "ASP.NET", "EF Core", "SQL Server", "jQuery",  "PSQL", "React"]
 
     const [currentPhrase, setCurrentPhrase] = useState(techWords[0])
     const index = useRef(0)
@@ -54,8 +54,21 @@ export const Home = ({setButtonClicked}) => {
                         <motion.div className="image-container"
                             initial={{opacity: 0}}
                             animate={{opacity: 1, transition: {delay: 2.8}}}>
+
                             {windowWidth < 800 && <img src={me3} alt="Ross Kennedy" id="landing-image"></img>}
                             {windowWidth >= 800 && <img src={me3} alt="Ross Kennedy" id="larger-landing-image"></img>}
+                                
+
+                        </motion.div>
+                        <motion.div
+                        initial={{opacity: 0, y: -50}}
+                        animate={{opacity: 1, y: 0, transition: {delay: 3.8, duration: 0.5}}}>
+                            <HomeNavImages setButtonClicked={setButtonClicked} />
+                        </motion.div>
+
+                        <motion.div 
+                            initial={{opacity: 0}}
+                            animate={{opacity: 1, transition: {delay: 3.8, duration: 0.5}}}>
                                 {windowWidth >= 800 && <p id="experience-in" className="landing-page-tech-words">Experienced in{"\u00A0"} 
                                 <AnimatePresence mode="wait">
                                     <motion.span
@@ -68,11 +81,7 @@ export const Home = ({setButtonClicked}) => {
                                     </motion.span>
                                 </AnimatePresence>
                                 </p>}
-                        </motion.div>
-                        <motion.div
-                        initial={{opacity: 0, y: 50}}
-                        animate={{opacity: 1, y: 0, transition: {delay: 3.8, duration: 0.5}}}>
-                            <HomeNavImages setButtonClicked={setButtonClicked} />
+
                         </motion.div>
                 </div>
             </motion.div>
