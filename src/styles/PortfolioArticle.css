@@ -9,7 +9,7 @@
 
 .portfolio-article-page img{
     width: 300px;
-    border: solid black;
+    border: solid black 1px;
     border-radius: 20px;
 }
 
@@ -45,6 +45,12 @@
     margin-top: 0px;
 }
 
+@media screen and (min-width: 600px){
+    #opticron-screenshot{
+        width: 600px;
+    }
+}
+
 @media screen and (min-width: 700px){
     .portfolio-article-page p{
         width: 700px;
@@ -60,5 +66,11 @@
     }
     #calculator-screenshot{
         width: 600px;     
+    }
+    #conj-screenshot{
+        width: 450px;
+    }
+    #opticron-screenshot{
+        width: 700px;
     }
 }

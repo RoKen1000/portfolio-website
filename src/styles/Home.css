@@ -38,9 +38,6 @@
     position: relative;
 }
 
-@media screen and(min-width: 400px){
-}
-
 @media screen and (min-width: 450px){
     .landing-page{
         overflow: none;
@@ -85,8 +82,15 @@
 
 #experience-in{
     display: flex;
-    width: 500px;
+    width: 800px;
     flex-direction: row;
     align-items: center;
-    margin-left: 150px;
+    margin: auto;
+    padding-left: 230px;
+}
+
+@media screen and (max-width: 800px){
+    #experience-in{
+        display: none;
+    }
 }

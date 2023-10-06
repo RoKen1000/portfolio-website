@@ -1,5 +1,5 @@
-import "../styles/PortfolioArticle.css"
-import example from "../images/nc-games-example.png"
+import "../../styles/PortfolioArticle.css"
+import example from "../../images/nc-games-example.png"
 import Button from "react-bootstrap/Button"
 import { motion } from "framer-motion"
 import { useNavigate, useLocation } from "react-router-dom"
