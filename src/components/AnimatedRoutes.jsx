@@ -9,7 +9,7 @@ import { MapYourDay } from "./portfolio-articles/MapYourDay"
 import { useEffect } from "react"
 import { ContactPage } from "./ContactPage"
 import { TypeScriptCalculator } from "./portfolio-articles/TypeScriptCalculator"
-import { Opticron } from "./portfolio-articles/Opticron"
+import { RetroRecordsAPI } from "./portfolio-articles/RetroRecordsAPI"
 import { ItalianConjugations } from "./portfolio-articles/ItalianConjugations"
 
 export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
@@ -34,7 +34,7 @@ export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
                 <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
                 <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />
                 <Route path="/portfolio/typescript-calculator" element={<TypeScriptCalculator />} />
-                <Route path="/portfolio/opticron" element={<Opticron/>} />
+                <Route path="/portfolio/retro-records-api" element={<RetroRecordsAPI/>} />
                 <Route path="/portfolio/conjugation-website" element={<ItalianConjugations/>} />
                 <Route path="/contact" element={<ContactPage/>}/>
             </Routes>
