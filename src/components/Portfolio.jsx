@@ -11,6 +11,7 @@ import { motion } from "framer-motion"
 import { useEffect } from "react"
 import calc from "../images/calc.png"
 import flag from "../images/italian-flag.png"
+import retroRecord from "../images/retro-record.png"
 
 export const Portfolio = () => {
 
@@ -85,11 +86,11 @@ export const Portfolio = () => {
                     <Row>
                     <Col>
                         <Card className="portfolio-cards" id="last-card">
-                            <Card.Img variant="top" id="binoculars"/>
+                            <Card.Img variant="top" src={retroRecord} id="binoculars"/>
                                 <Card.Body>
-                                    <Card.Title><strong>Opticron Website</strong></Card.Title>
+                                    <Card.Title><strong>Retro Records API</strong></Card.Title>
                                     <Card.Text>
-                                        This is a main page for a commercial website written in C# and ASP.NET MVC. The project also features a content management page to manipulate what appears on the page. 
+                                        This is an ASP.NET Web API created with C# and .NET. It allows users to perform CRUD operations on a database that stores different music records.
                                     </Card.Text>
                                     <Button className="portfolio-card-buttons" type="button" onClick={() => navigate("/portfolio/retro-records-api")} variant="primary">Learn More</Button>
                                 </Card.Body>
