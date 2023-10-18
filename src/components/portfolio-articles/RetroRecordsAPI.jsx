@@ -39,7 +39,7 @@ export const RetroRecordsAPI = () => {
                         <figcaption>An example of a GET request.</figcaption>
                     </figure>
                     <p></p> 
-                    <p>The tech stack for this website is:</p>
+                    <p>The tech stack for this project is:</p>
                     <ul className="portfolio-article-tech-stack">
                         <li>C#</li>
                         <li>ASP.NET Web API</li>
