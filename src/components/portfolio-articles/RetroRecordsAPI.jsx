@@ -38,16 +38,16 @@ export const RetroRecordsAPI = () => {
                         <img src={windowWidth < 600 ? apiMob : apiDesk} id="api-screenshot" alt="An example of a result of a GET request being made to the Retro Records API."></img>
                         <figcaption>An example of a GET request.</figcaption>
                     </figure>
-                    <p></p> 
+                    <p>This is an API that is designed to store data on music records. It has been built using C#, .Net, and ASP.NET Web API. The database that works with the API uses MS SQL Server and Entity Framework Core for CRUD operations. The project is configured to use Swagger for API documentation and testing.</p> 
                     <p>The tech stack for this project is:</p>
                     <ul className="portfolio-article-tech-stack">
                         <li>C#</li>
                         <li>ASP.NET Web API</li>
                         <li>Entity Framework Core</li>
                         <li>MS SQL Server</li>
-                        
                     </ul>
-                    <p></p>
+                    <p>The API uses Newtonsoft Json and Json patch to make PATCH/PUT requests allowing for precise property replacement for records that are already in the database.</p>
+                    <p>I wanted to experiment with more complex data structures rather than just have primitive data types for each Record property. I decided to use TimeSpan and DateTime for some properties such as a Record's release date, the Record's run time and when the Record object was created or updated in the database.</p>
                 </article>
                 <Button onClick={() => navigate("/portfolio")}>Back To Portfolio</Button>
             </motion.div>
