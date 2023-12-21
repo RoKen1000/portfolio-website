@@ -48,7 +48,7 @@ export const Home = ({setButtonClicked}) => {
                             initial={{opacity: 0, y: 50}}
                             animate={{y: 0, opacity: 1, transition: {delay: 1.8, duration: 1}}}
                         >
-                            <h2 id="landing-titles">A <strong>Full-Stack Developer</strong> looking for a Junior Developer Role</h2>
+                            <h2 id="landing-titles">A <strong>Full-Stack Developer</strong></h2>
                         </motion.div>
                     </div>
                         <motion.div className="image-container"
