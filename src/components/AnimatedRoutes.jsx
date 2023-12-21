@@ -11,16 +11,20 @@ import { TypeScriptCalculator } from "./portfolio-articles/TypeScriptCalculator"
 import { RetroRecordsAPI } from "./portfolio-articles/RetroRecordsAPI"
 import { ItalianConjugations } from "./portfolio-articles/ItalianConjugations"
 
-export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
+export const AnimatedRoutes = ({setHeader, setFooter, setButtonClicked}) => {
 
     const location = useLocation()
     
     useEffect(() => {
         if(location.pathname === "/"){
             setHeader(false)
+            setFooter(false)
             setButtonClicked("")
         }
-        else setTimeout(() => setHeader(true), 270)
+        else {
+            setTimeout(() => setHeader(true), 270)
+            setTimeout(() => setFooter(true), 270)
+        } 
     }, [location.pathname])
 
     return(
