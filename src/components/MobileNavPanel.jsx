@@ -41,11 +41,6 @@ export const MobileNavPanel = () => {
                             alt="Icon of a folder linking to the portfolio page." size="3x"/>
                             <p>Portfolio</p>
                         </NavLink>
-                        <NavLink to="/contact" className="mobile-nav-link" onClick={handleClose}>
-                            <FontAwesomeIcon icon={faEnvelope} className="mobile-nav-icons"
-                            alt="Icon of an envelope linking to the contact page." size="3x"/>
-                            <p>Contact</p>
-                        </NavLink>
                 </Offcanvas.Body>
             </Offcanvas>
         </nav>

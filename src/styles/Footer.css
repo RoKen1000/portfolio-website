@@ -1,0 +1,21 @@
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icons svg{
+    margin: 20px;
+}
+
+.social-icons a{
+    color: black;
+}
+
+footer{
+    background-color: #d5b9a3;
+}
+
+.footer-icons:hover{
+    color: grey;
+}

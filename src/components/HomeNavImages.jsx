@@ -29,12 +29,6 @@ export const HomeNavImages = ({setButtonClicked}) => {
                     </Link>
                     <p>Portfolio</p>
                 </div>
-                <div>
-                    <Link to="/contact" >
-                        <FontAwesomeIcon onClick={() => handleClick("contact-nav-button")} icon={faEnvelope} className="icons" alt="Icon of an envelope linking to the contact page." size="3x"/>
-                    </Link>
-                    <p>Contact</p>
-                </div>
             </div>
         </nav>
     )

@@ -102,6 +102,7 @@ export const Skills = () => {
                         </Col>
                     </Row>
                 </Container>
+                <div id="skills-bottom-spacer"></div>
             </motion.div>
         </main>
     )
