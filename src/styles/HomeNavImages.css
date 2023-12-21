@@ -5,10 +5,9 @@
     flex-direction: row;
     font-size: large;
     color: black;
-    /* width: 100px; */
-    /* margin-bottom: 40px; */
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     justify-content: center;
 }
 

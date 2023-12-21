@@ -37,7 +37,7 @@ export const Home = ({setButtonClicked}) => {
                 exit={{opacity: 0}}              
             >
                 <div className="landing-page">
-                    <motion.div className="image-container"
+                    <motion.div
                         initial={{opacity: 0}}
                         animate={{opacity: 1, transition: {delay: 0.8}}}>
 
@@ -56,7 +56,7 @@ export const Home = ({setButtonClicked}) => {
                             initial={{opacity: 0, y: -50}}
                             animate={{y: 0, opacity: 1, transition: {delay: 2.8, duration: 1}}}
                         >
-                            <h2 className="landing-titles">A <strong>Full-Stack Developer</strong></h2>
+                            <h2 className="landing-titles" id="last-landing-titles">A <strong>Full-Stack Developer</strong></h2>
                         </motion.div>
                     </div>
                     
