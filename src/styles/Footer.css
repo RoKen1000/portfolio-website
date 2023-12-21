@@ -11,3 +11,11 @@
 .social-icons a{
     color: black;
 }
+
+footer{
+    background-color: #d5b9a3;
+}
+
+.footer-icons:hover{
+    color: grey;
+}
