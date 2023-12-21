@@ -7,7 +7,6 @@ import { Portfolio } from "./Portfolio"
 import { BoardGameReviews } from "./portfolio-articles/BoardGameReviews"
 import { MapYourDay } from "./portfolio-articles/MapYourDay"
 import { useEffect } from "react"
-import { ContactPage } from "./ContactPage"
 import { TypeScriptCalculator } from "./portfolio-articles/TypeScriptCalculator"
 import { RetroRecordsAPI } from "./portfolio-articles/RetroRecordsAPI"
 import { ItalianConjugations } from "./portfolio-articles/ItalianConjugations"
@@ -36,7 +35,6 @@ export const AnimatedRoutes = ({setHeader, setButtonClicked}) => {
                 <Route path="/portfolio/typescript-calculator" element={<TypeScriptCalculator />} />
                 <Route path="/portfolio/retro-records-api" element={<RetroRecordsAPI/>} />
                 <Route path="/portfolio/conjugation-website" element={<ItalianConjugations/>} />
-                <Route path="/contact" element={<ContactPage/>}/>
             </Routes>
         </AnimatePresence>
     )
