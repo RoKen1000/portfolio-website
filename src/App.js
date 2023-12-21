@@ -17,8 +17,10 @@ function App() {
       <AnimatePresence mode="wait">
         {header && <Header buttonClicked={buttonClicked} setButtonClicked={setButtonClicked}/>}
       </AnimatePresence>
-      <AnimatedRoutes setHeader={setHeader} setFooter={setFooter} setButtonClicked={setButtonClicked}/>
-      {footer && <Footer/>}
+      <div id='page-container'>
+        <AnimatedRoutes setHeader={setHeader} setFooter={setFooter} setButtonClicked={setButtonClicked}/>
+        {footer && <Footer/>}
+      </div>
     </div>
   );
 }

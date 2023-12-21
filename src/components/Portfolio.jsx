@@ -110,7 +110,7 @@ export const Portfolio = () => {
                         </Col>                       
                     </Row>
                 </Container>
-                <h2>More to come!</h2>
+                <div id="portfolio-bottom-spacer"></div>
             </motion.div>
         </main>
     )

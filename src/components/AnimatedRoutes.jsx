@@ -28,18 +28,20 @@ export const AnimatedRoutes = ({setHeader, setFooter, setButtonClicked}) => {
     }, [location.pathname])
 
     return(
-        <AnimatePresence mode="wait">
-            <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<Home setButtonClicked={setButtonClicked}/>}/>
-                <Route path="/about" element={<About />}/>
-                <Route path="/skills" element={<Skills />}/>
-                <Route path="/portfolio" element={<Portfolio/>}/>
-                <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
-                <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />
-                <Route path="/portfolio/typescript-calculator" element={<TypeScriptCalculator />} />
-                <Route path="/portfolio/retro-records-api" element={<RetroRecordsAPI/>} />
-                <Route path="/portfolio/conjugation-website" element={<ItalianConjugations/>} />
-            </Routes>
-        </AnimatePresence>
+        <div id="content-wrap">
+            <AnimatePresence mode="wait">
+                <Routes location={location} key={location.pathname}>
+                    <Route path="/" element={<Home setButtonClicked={setButtonClicked}/>}/>
+                    <Route path="/about" element={<About />}/>
+                    <Route path="/skills" element={<Skills />}/>
+                    <Route path="/portfolio" element={<Portfolio/>}/>
+                    <Route path="/portfolio/board-game-reviews" element={<BoardGameReviews/>}/>
+                    <Route path="/portfolio/map-your-day" element={<MapYourDay/>} />
+                    <Route path="/portfolio/typescript-calculator" element={<TypeScriptCalculator />} />
+                    <Route path="/portfolio/retro-records-api" element={<RetroRecordsAPI/>} />
+                    <Route path="/portfolio/conjugation-website" element={<ItalianConjugations/>} />
+                </Routes>
+            </AnimatePresence>
+        </div>
     )
 }

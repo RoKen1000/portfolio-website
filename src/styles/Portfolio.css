@@ -93,3 +93,7 @@
         height: auto;
     }
 }
+
+#portfolio-bottom-spacer{
+    padding-bottom: 80px;
+}
