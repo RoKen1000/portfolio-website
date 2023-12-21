@@ -4,11 +4,13 @@
 }
 
 #landing-image{
-    width: 300px;
-    margin: 20px;
-    position: absolute;
-    left: 45px;
-    top: 60px
+    width: 250px;
+    margin: 10px;
+    margin-top: 70px;
+    /* margin-left: 20px; */
+    /* position: absolute; */
+    /* left: 45px;
+    top: 60px */
 }
 
 #larger-landing-image{
@@ -19,53 +21,64 @@
     font-size: xx-large;
     margin: 0px;
     position: relative;
-    bottom: 11px;
+    /* bottom: 11px; */
 }
 
-@media screen and (max-width: 374px){
+/* @media screen and (max-width: 374px){
     .landing-page{
         overflow: hidden;
     }
-}
+} */
 
-#landing-titles{
-    padding: 10px;
-    text-align: left;
-    width: 300px;
+.landing-titles{
+    /* padding: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 250px;
 }
 
 .image-container{
-    position: relative;
+    /* position: relative; */
+}
+
+@media screen and (min-width: 375px){
+    #landing-image{
+        width: 350px;
+    }
 }
 
 @media screen and (min-width: 450px){
-    .landing-page{
-        overflow: none;
-    }
     #landing-titles{
         width: auto;
         text-align: center;
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 600px){
+    #landing-image{
+        width: 550px;
+    }
+}
+
+/* @media screen and (min-width: 375px) {
     .landing-page-phrases{
         position: static;
     }
-}
+} */
 
-@media screen and (min-width: 450px) {
+/* @media screen and (min-width: 450px) {
     #landing-image{
         left: 100px;
     }
-}
+} */
 
-@media screen and (min-width: 600px){
+/* @media screen and (min-width: 600px){
     #landing-image{
         width: 450px;
         left: 150px;
     }
-}
+} */
 
 @media screen and (min-width: 800px){
     .image-container{
@@ -78,7 +91,7 @@
         height: 580px;
         background-image: none;   
     }
-}
+} 
 
 #experience-in{
     display: flex;

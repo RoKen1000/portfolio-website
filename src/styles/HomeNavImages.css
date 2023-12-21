@@ -1,12 +1,15 @@
 
 .nav-image-grid{
     display: flex;
-    gap: 20px;
-    flex-direction: column;
+    gap: 30px;
+    flex-direction: row;
     font-size: large;
     color: black;
-    width: 100px;
-    margin-bottom: 40px;
+    /* width: 100px; */
+    /* margin-bottom: 40px; */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
 .nav-image-grid p{
